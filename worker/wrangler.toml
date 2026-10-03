@@ -1,0 +1,24 @@
+name = "ligo-api"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# Replace YOUR-DOMAIN.org with your real domain (it must be on Cloudflare DNS)
+routes = [{ pattern = "YOUR-DOMAIN.org/api/*", zone_name = "YOUR-DOMAIN.org" }]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "ligo"
+database_id = "PASTE-ID-FROM-wrangler-d1-create"
+
+[[r2_buckets]]
+binding = "MEDIA"
+bucket_name = "ligo-media"
+
+[ai]
+binding = "AI"
+
+[vars]
+SITE_URL = "https://YOUR-DOMAIN.org"
+SIGNUP = "invite"                      # "invite" now; change to "open" later
+FROM_EMAIL = "L.I.G.O. SPACE <no-reply@YOUR-DOMAIN.org>"
+# Secret (not stored here): wrangler secret put RESEND_API_KEY
