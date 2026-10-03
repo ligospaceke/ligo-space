@@ -8,7 +8,7 @@ routes = [{ pattern = "YOUR-DOMAIN.org/api/*", zone_name = "YOUR-DOMAIN.org" }]
 [[d1_databases]]
 binding = "DB"
 database_name = "ligo"
-database_id = "PASTE-ID-FROM-wrangler-d1-create"
+database_id = "6d6e177a-37b9-4c8d-9b19-fc50dbcc2642"
 
 [[r2_buckets]]
 binding = "MEDIA"
