@@ -15,6 +15,6 @@ binding = "AI"
 
 [vars]
 SUPABASE_URL = "https://lpnnntuelgaisoiimuka.supabase.co"
-SITE_URL = "https://ligo-space.ligospace-ke.workers.dev/" # Update to https://ligospace.co.ke once domain is live
+SITE_URL = "https://ligo.ligospace-ke.workers.dev/" # Update to https://ligospace.co.ke once domain is live
 SIGNUP = "invite"                           # Set to "open" when ready for open registration
 FROM_EMAIL = "onboarding@resend.dev"
