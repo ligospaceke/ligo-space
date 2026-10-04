@@ -10,15 +10,12 @@ binding = "DB"
 database_name = "ligo"
 database_id = "6d6e177a-37b9-4c8d-9b19-fc50dbcc2642"
 
-[[r2_buckets]]
-binding = "MEDIA"
-bucket_name = "ligo-media"
-
 [ai]
 binding = "AI"
 
 [vars]
+SUPABASE_URL = "https://YOUR_PROJECT_ID.supabase.co"   # Project Settings > API > Project URL
 SITE_URL = "https://YOUR-DOMAIN.org"
 SIGNUP = "invite"                      # "invite" now; change to "open" later
 FROM_EMAIL = "L.I.G.O. SPACE <no-reply@YOUR-DOMAIN.org>"
-# Secret (not stored here): wrangler secret put RESEND_API_KEY
+# Secrets (never put these in files or chat): wrangler secret put RESEND_API_KEY  and  wrangler secret put SUPABASE_SERVICE_KEY
