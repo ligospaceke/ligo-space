@@ -17,5 +17,5 @@ binding = "AI"
 SUPABASE_URL = "https://lpnnntuelgaisoiimuka.supabase.co"   # Project Settings > API > Project URL
 SITE_URL = "https://YOUR-DOMAIN.org"
 SIGNUP = "invite"                      # "invite" now; change to "open" later
-FROM_EMAIL = "L.I.G.O. SPACE <no-reply@YOUR-DOMAIN.org>"
+FROM_EMAIL = "L.I.G.O. SPACE <ligospace.ke@gmail.com>"
 # Secrets (never put these in files or chat): wrangler secret put RESEND_API_KEY  and  wrangler secret put SUPABASE_SERVICE_KEY
