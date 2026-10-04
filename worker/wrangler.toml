@@ -1,6 +1,6 @@
 name = "ligo-api"
 main = "src/index.js"
-compatibility_date = "2026-09-01"
+compatibility_date = "2024-01-01"
 
 # Replace YOUR-DOMAIN.org with your real domain (it must be on Cloudflare DNS)
 routes = [{ pattern = "YOUR-DOMAIN.org/api/*", zone_name = "YOUR-DOMAIN.org" }]
