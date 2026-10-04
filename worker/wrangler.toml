@@ -1,9 +1,9 @@
 name = "ligo-space"
 main = "src/index.js"
-compatibility_date = "2024-01-01"
+compatibility_date = "2026-09-01"
 
-# Replace YOUR-DOMAIN.org with your real domain (it must be on Cloudflare DNS)
-routes = [{ pattern = "YOUR-DOMAIN.org/api/*", zone_name = "YOUR-DOMAIN.org" }]
+# Un-comment and update these routes once your custom domain is on Cloudflare DNS
+# routes = [{ pattern = "ligospace.co.ke/api/*", zone_name = "ligospace.co.ke" }]
 
 [[d1_databases]]
 binding = "DB"
@@ -14,8 +14,7 @@ database_id = "6d6e177a-37b9-4c8d-9b19-fc50dbcc2642"
 binding = "AI"
 
 [vars]
-SUPABASE_URL = "https://lpnnntuelgaisoiimuka.supabase.co"   # Project Settings > API > Project URL
-SITE_URL = "https://YOUR-DOMAIN.org"
-SIGNUP = "invite"                      # "invite" now; change to "open" later
-FROM_EMAIL = "L.I.G.O. SPACE <ligospace.ke@gmail.com>"
-# Secrets (never put these in files or chat): wrangler secret put RESEND_API_KEY  and  wrangler secret put SUPABASE_SERVICE_KEY
+SUPABASE_URL = "https://lpnnntuelgaisoiimuka.supabase.co"
+SITE_URL = "https://ligo-space.workers.dev" # Update to https://ligospace.co.ke once domain is live
+SIGNUP = "invite"                           # Set to "open" when ready for open registration
+FROM_EMAIL = "onboarding@resend.dev"
